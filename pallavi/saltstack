@@ -1,0 +1,94 @@
+
+
+Day1:
+
+
+              The Philosophy of Salt ---30 Minutes
+              		Need for Salt
+              		Salt Vs other Config management  stacks
+              How Salt Communicates    --30 Minutes
+              		Communication Model 
+              		Architecture of salt
+              		Security and Control
+
+-Installation and Setup[Handson]
+              Installing Salt
+              		- Master Minion Model
+              Configuring Salt 
+                      - Post Installation Configuration
+              Key Acceptance and Encryption
+                       - Enabling Communication for Master & Minion
+–Execution Modules     
+              Execution Module Basics
+                   Introduction
+                   Preparing Salt[handson]
+                   create Exceution Model[Handson]
+                   Run The Execution Model[Handson]
+              Common Execution Modules 
+              		Overview of salt native Execution model
+              		Auditing the installed packages  against  vulnerabilties [handson]
+              Call from Master or Minions
+
+
+ Day2:
+
+–The State of an Infrastructure 
+              The Philosophy of Salt's State System 
+              Create First State [Handson] 
+              Dissect State Functions
+              Execution Flow of a State Run
+                How the  top/base state communicates with the other states
+              Debugging States
+              		Experimenting with Issue and Debug and Fix [Handson]
+–Expanding States with Jinja and Pillar   
+              Introduction to YAML, Jinja, and Other Renderers 
+                    Create YAMl  and use Yaml as Pillar in salt [Handson]
+                    Introduction  of JINJA template and how to use them in modules[Handson]
+              		How to Write Reusable States
+              		How to Write Maintainable States
+              		YAML and Jinja Best Practices and Gotchas 
+              Configuring States Using Pillar 
+              		Pillar utilisations
+              Learning Salt Formulas 
+              Debugging Jinja[Handson]
+
+Day3:
+
+–Complex State Trees   
+              Glue SLS Files Together 
+              		packaging the SLS file  and  distribution[handson]
+              Defining, Enforcing, and Debugging Execution Orders 
+              Conditional and Branching Logic During a State Run 
+              Sharing Data between Systems with Salt Mine 
+               		grains vs Pillar
+               		Creating grains and  Using in states[handson]
+              Using Salt Orchestrate to Manage Complex State Runs 
+
+Day4:
+
+–Events and the Reactor             
+              An Overview of Salt's Event Bus
+              		 overview on Zero MqBus and Other Bus 
+              Sending Custom Events 
+              		Event managements in  salt
+              Listening to Events and Trigger Actions with Salt's Reactor 
+              		create reactors for events[handson]
+
+              Integrating Salt with External Tools Using Events 
+              Sending Events Using Beacon Modules 
+              		Managing Configuration Drift using  salt Beacons and reactors[handson]
+              How to Debug the Reactor and Best Practices? 
+–The Salt REST API         
+              Installing and Configuring Salt-API [handson]
+              Exploring rest_cherrypy 
+              More rest_cherrypy Features 
+              Using Salt-API to Integrate with External Systems
+
+
+On the Whole The content will cover the  below use case
+		Deployement using Salt stack by experimenting the copying the Files and Saving to target minions
+		Solving the Conventional Problem of Configuration management  so called  Configuration drift.
+		Managing the Services of the installed Components in the  target servers
+		Using Salt as an API to communicate with  non salt environments
+
+
